@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+</html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title> Survey Form </title>
+</head>
+<body>
+
+  <div id="container">
+    <h1 id="title"> Survey</h1>
+    <p id="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p>
+
+    <form>
+      <fieldset>
+        <legend>A Survey</legend>
+
+        <label class="question" id="name-label" for="name">Your name</label>
+        <input type="text" id="name" placeholder="Firstname MI. Lastname" required>
+
+        <label class="question" for="email" id="email-label"> Email: </label>
+        <input type="email" id="email" name="email" placeholder="youremail@something.com" required>
+
+        <label class="question" for="number" id="number-label"> How would you rate the design of this website? </label>
+        <input type="number" id="number" name="number" min="1" max="10" placeholder="1" required>
+
+        <label class="question" for="dropdown"> Country: </label>
+        <select id="dropdown" name="dropdown">
+          <option value="choose" disabled="true" selected> Choose a Country</option>
+          <option value="Philippines"> Philippines </option>
+          <option value="America">America </option>
+          <option value="Canada"> Canada </option>
+          <option value="Australia"> Australia </option>
+          <option value="India"> India </option>
+        </select>
+
+        <label class="question" id="sex"> Sex </label>
+        <input type="radio" name="sex" id="male" value="male"> <label for="male">MALE</label>
+        <input type="radio" name="sex" id="female" value="female"><label for="female"> FEMALE </label>
+
+        <label class="question"> Cats, Dogs and/or Bunnies? </label>
+        <input id="dogs" type="checkbox" name="personality" value="dogs"> <label for="dogs">DOGS</label>
+        <input id="cats" type="checkbox" name="personality" value="cats"> <label for="cats">CATS</label>
+        <input id="bunnies" type="checkbox" name="personality" value="bunnies"> <label for="bunnies">BUNNIES</label>
+
+        <label class="question"> How was the survey? </label>
+        <input type="radio" name="fav" id="good" value="good"> <label for="good">GOOD</label>
+        <input type="radio" name="fav" id="okay" value="okay"> <label for="okay">OKAY</label>
+        <input type="radio" name="fav" id="bad" value="bad"> <label for="bad">BAD</label>
+
+        <label for="say" class="question">Final Thoughts</label>
+        <textarea id="say" maxlength="55" placeholder="Write something..."></textarea>
+
+        <button type="submit" id="submit"> Submit </button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+#container {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+form {
+    margin-top: 40px;
+} 
+
+fieldset {
+    padding: 40px;
+    border: solid 1px #2E2C2F;
+    background: #B9CFD4;
+}
+
+fieldset legend {
+    font-size: 18px;
+    background: #475B63;
+    padding: 10px;
+    border: solid 1px #2E2C2F;
+    color: aliceblue;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    margin: 0 0 20px;
+    border: solid 1px #2E2C2F;
+    border-top: none;
+    display: block;
+    font-size: 14px;
+    color: black;
+    font-family: Monaco, monospace;
+    text-transform: uppercase;
+}
+
+input[type="email"]{
+    text-transform: lowercase;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    padding: 10px;
+    margin: 10px 10px 20px;
+    font-size: 14px;
+    color: black;
+    font-family: Monaco, monospace;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+.question {
+    text-transform: uppercase;
+    background: #475B63;
+    display: block;
+    padding: 2%;
+    color: aliceblue;
+}
+label{
+    font-size: 12px;
+}
+
+button{
+    font-size: 14px;
+    background: #AFAAB9;
+    height: 40px;
+    border: solid 1px #2E2C2F;
+    margin-top: 15px;
+    padding: 0 40px;
+    color: black;
+    display: block;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #2E2C2F;
+}
+
+button:active {
+    outline-color: black;
+}
+
+@media (min-width: 576px) { 
+    #container{
+        width: 100%;
+    }
+    .question{
+        width: 58%;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select,
+    textarea{
+        width: 62%;
+    }
+}
+
+@media (min-width: 768px) {
+    #container{
+        width: 75%;
+    }
+}
+
+@media (min-width: 992px) { 
+     #container{
+        width: 50%;
+    }
+    .question{
+        width: 46%;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select,
+    textarea{
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px){
+    .question{
+        width: 70%;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select,
+    textarea{
+        width: 80%;
+    }
+}
